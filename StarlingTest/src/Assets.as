@@ -14,6 +14,9 @@ package
         [Embed(source="../assets/graphics/bgWelcome.jpg")]
         static public const BgWelcome:Class;
         
+        [Embed(source="../assets/graphics/bgLayer1.jpg")]
+        static public const BgLayer1:Class;
+        
         [Embed(source="../assets/graphics/welcome_hero.png")]
         static public const WelcomeHero:Class;
         
@@ -42,7 +45,7 @@ package
             {
                 var texture:Texture = getTexture("AtlasTextureGame");
                 var xml:XML = new XML(new AtlasXmlGame);
-                gameTextureAtlas = new TextureAtlas(texture,xml);
+                gameTextureAtlas = new TextureAtlas(texture, xml);
             }
             return gameTextureAtlas;
         }
